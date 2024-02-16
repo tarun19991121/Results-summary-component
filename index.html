@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Results summary component</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<h1>Results summary component</h1>
-	  
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Results summary component</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="section-1">
+      <h3>Your Result</h3>
+      <div class="marks">
+        <h1>76</h1>
+        <p>of 100</p>
+      </div>
+
+      <h2>Great</h2>
+      <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+    <section class="section-2">
+      <h3 class="summary-heading">Summary</h3>
+
+      <div class="inner">
+        <div class="marks-container reaction">
+          <img src="./images/icon-reaction.svg" alt="">
+          <div class="result">
+            <p>Reaction</p>
+            <span><strong>80</strong> / 100</span>
+          </div>
+        </div>
+
+        <div class="marks-container memory">
+          <img src="./images/icon-memory.svg" alt="">
+          <div class="result">
+            <p>Memory</p>
+            <span><strong>92</strong> / 100</span>
+          </div>
+        </div>
+
+        <div class="marks-container verbal">
+          <img src="./images/icon-verbal.svg" alt="">
+          <div class="result">
+            <p>Verbal</p>
+            <span><strong>61</strong> / 100</span>
+          </div>
+        </div>
+
+        <div class="marks-container visual">
+          <img src="./images/icon-visual.svg" alt="">
+          <div class="result">
+            <p>Visual</p>
+            <span><strong>72</strong> / 100</span>
+          </div>
+        </div>
+
+        <button>Continue</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+
 </html>

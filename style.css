@@ -1,4 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%); /*(background)*/
+    --Light-royal-blue: hsl(241, 81%, 54%); /*(background)*/
+    --Violet-blue: hsla(256, 72%, 46%, 1); /*(circle)*/
+    --Persian-blue: hsla(241, 72%, 46%, 0);/*(circle)*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-  margin: 0;
-  height: 100vh;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+main {
+    max-width: 590px;
+    display: flex;
+    margin: auto;
+    background-color: var(--White);
+}
+button {
+    padding: 1rem 5rem;
+    border-radius: 30px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-weight: 700;
+    border: none;
+    margin-top: 1.8rem;
+}
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 100%, 64%), var(--Light-royal-blue));
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    color: var(--Light-lavender);
+    padding: 0.5rem;
+}
+p {
+    font-size: 15px;
+    font-weight: 500;
+}
+img {
+    width: 15px;
+}
+span {
+    color: var(--Dark-gray-blue);
+}
+.section-1 {
+    width: 50%;
+    background-image: linear-gradient(hsl(252, 100%, 64%), var(--Light-royal-blue));
+    text-align: center;
+    color: var(--White);
+    padding: 25px 35px 25px 35px;
+    border-radius: 30px;
+}
+.section-2 {
+    background-color: var(--White);
+    width: 50%;
+    padding: 25px 35px 25px 35px;
+    box-shadow: 15px 15px 30px hsla(252, 86%, 47%, 0.1);
+    border-radius: 0 30px 30px 0;
+}
+
+.marks-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.4rem auto;
+}
+.marks-container p{
+    font-weight: 700;
+    padding-left: 0;
+} 
+
+.result {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.reaction {
+    color: var(--Light-red);
+    font-weight: 500;
+    background-color: hsl(0, 100%, 67%,0.05);
+    padding: 12px;
+    border-radius: 8px;
+}
+.memory{
+    color: var(--Orangey-yellow);
+    font-weight: 500;
+    background-color: hsl(39, 100%, 56%,0.05);
+    padding: 12px;
+    border-radius: 8px;
+}
+.verbal{
+    color: var(--Green-teal);
+    font-weight: 500;
+    background-color: hsl(166, 100%, 37%,0.05);
+    padding: 12px;
+    border-radius: 8px;
+}
+.visual{
+    color: var(--Cobalt-blue);
+    font-weight: 700;
+    background-color: hsl(234, 85%, 45%,0.05);
+    padding: 12px;
+    border-radius: 8px;
+}
+.marks{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    width: 9rem;
+    height: 9rem;
+    background-image: linear-gradient(var(--Violet-blue),var(--Persian-blue));
+    border-radius: 50%;
+    margin: 1.2rem auto;
+    padding: 0.6rem;
+}
+.marks p {
+    margin: 0;
+    padding: 0;
+    color: var(--Light-lavender);
+}
+.description {
+    color: var(--Light-lavender);
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+.summary-heading {
+    color: var(--Dark-gray-blue);
+    font-weight: 800;
+    padding-left: 0rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+    main {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+    .section-1 {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 3rem 0;
+        border-radius: 0 0 2rem 2rem;
+    }
+    .section-2 {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+        box-shadow: none;
+    }
+    .description {
+        padding: 0 3.5rem;
+    }
+    .summary-heading {
+        margin-top: 1rem;
+    }
 }

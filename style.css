@@ -25,44 +25,39 @@ body {
     font-family: "Hanken Grotesk", sans-serif;
 }
 main {
-    max-width: 590px;
+    max-width: 735px;
     display: flex;
     margin: auto;
     background-color: var(--White);
 }
 button {
-    padding: 1rem 5rem;
+    padding: 1.2rem 7rem;
     border-radius: 30px;
     background-color: var(--Dark-gray-blue);
     color: var(--White);
     font-weight: 700;
     border: none;
-    margin-top: 1.8rem;
+    margin: 2.5rem auto;
 }
 button:hover {
     cursor: pointer;
     background-image: linear-gradient(hsl(252, 100%, 64%), var(--Light-royal-blue));
 }
 h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 30px;
+    margin: 1.5rem auto 1rem auto;
 }
+
 h2 {
-    margin: 0;
-    padding: 0;
-}
-h3 {
     color: var(--Light-lavender);
-    padding: 0.5rem;
+    padding: 1rem;
 }
 p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
 }
 img {
-    width: 15px;
+    width: 20px;
 }
 span {
     color: var(--Dark-gray-blue);
@@ -72,26 +67,32 @@ span {
     background-image: linear-gradient(hsl(252, 100%, 64%), var(--Light-royal-blue));
     text-align: center;
     color: var(--White);
-    padding: 25px 35px 25px 35px;
+    padding: 1.5rem 3rem;
     border-radius: 30px;
 }
 .section-2 {
     background-color: var(--White);
     width: 50%;
-    padding: 25px 35px 25px 35px;
+    padding: 1.5rem 3rem;
     box-shadow: 15px 15px 30px hsla(252, 86%, 47%, 0.1);
     border-radius: 0 30px 30px 0;
 }
+.result-given {
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    font-weight: 700;
+}
 
 .marks-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 0.4rem auto;
+    margin: 0.5rem auto;
 }
 .marks-container p{
     font-weight: 700;
-    padding-left: 0;
+    padding: 0;
 } 
 
 .result {
@@ -104,40 +105,40 @@ span {
     color: var(--Light-red);
     font-weight: 500;
     background-color: hsl(0, 100%, 67%,0.05);
-    padding: 12px;
+    padding: 1rem 0.5rem;
     border-radius: 8px;
 }
 .memory{
     color: var(--Orangey-yellow);
     font-weight: 500;
     background-color: hsl(39, 100%, 56%,0.05);
-    padding: 12px;
+    padding: 1rem 0.5rem;
     border-radius: 8px;
 }
 .verbal{
     color: var(--Green-teal);
     font-weight: 500;
     background-color: hsl(166, 100%, 37%,0.05);
-    padding: 12px;
+    padding: 1rem 0.5rem;
     border-radius: 8px;
 }
 .visual{
     color: var(--Cobalt-blue);
     font-weight: 700;
     background-color: hsl(234, 85%, 45%,0.05);
-    padding: 12px;
+    padding: 1rem 0.5rem;
     border-radius: 8px;
 }
 .marks{
     display: flex;
     flex-direction: column;
     place-content: center;
-    width: 9rem;
-    height: 9rem;
+    width: 12rem;
+    height: 12rem;
     background-image: linear-gradient(var(--Violet-blue),var(--Persian-blue));
     border-radius: 50%;
-    margin: 1.2rem auto;
-    padding: 0.6rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
 }
 .marks p {
     margin: 0;
@@ -146,14 +147,13 @@ span {
 }
 .description {
     color: var(--Light-lavender);
-    padding: 0.5rem;
-    margin-top: 0.3rem;
+    padding: 0 0.5rem 1.5rem 0.5rem;
 }
 .inner {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0.5rem 0;
 }
 .summary-heading {
     color: var(--Dark-gray-blue);
